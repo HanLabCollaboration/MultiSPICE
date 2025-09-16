@@ -1,0 +1,22 @@
+Package: MultiSPICE
+Type: Package
+Title: MultiSPICE: Consensus-based screening and selection of ligand-receptor interactions for cell-cell communication in multi-sample spatial transcriptomics
+Version: 1.0.0
+Author: Mengrui Zhang
+Maintainer: Mengrui Zhang <mrzhang@stanford.edu>
+Description: Consensus-based screening and selection of ligand-receptor interactions for cell-cell communication in multi-sample spatial transcriptomics
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: 
+  stringr,
+  reshape2,
+  ggplot2,
+  ggrepel,
+  ggrastr,
+  RColorBrewer,
+  ComplexHeatmap,
+  circlize,
+  tidyr
+  
+  
