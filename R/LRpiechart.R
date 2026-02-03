@@ -9,6 +9,8 @@
 
 LRpiechart <- function(dat, colnum = "celltype1", colors = col_vector, main = NULL){
   plot_data <- data.frame(table(dat[[colnum]]))
+  # Remove zero frequency entries
+  plot_data <- plot_data[plot_data$Freq > 0, ]
   # Get the positions
   plot_data <- plot_data %>%
     mutate(csum = rev(cumsum(rev(Freq))),
